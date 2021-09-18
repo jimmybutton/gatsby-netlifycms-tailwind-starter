@@ -1,0 +1,55 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.4",
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "gatsby": "^3.14.0",
+    "gatsby-plugin-image": "^1.14.0",
+    "gatsby-plugin-layout": "^2.14.0",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-netlify-cms": "^5.14.0",
+    "gatsby-plugin-robots-txt": "^1.6.10",
+    "gatsby-plugin-sharp": "^3.14.0",
+    "gatsby-plugin-sitemap": "^4.10.0",
+    "gatsby-remark-copy-linked-files": "^4.11.0",
+    "gatsby-remark-images": "^5.11.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-transformer-remark": "^4.11.0",
+    "gatsby-transformer-remark-frontmatter": "^1.1.0",
+    "gatsby-transformer-sharp": "^3.14.0",
+    "marked": "^3.0.4",
+    "netlify-cms-app": "^2.15.44",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "gatsby-plugin-postcss": "^4.14.0",
+    "postcss": "^8.3.6",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

@@ -1,0 +1,172 @@
+backend:
+  name: github
+  repo: jimmybutton/gatsby-netlify-cms
+  branch: main
+
+local_backend: true
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "src/pages/projects"
+    filter: {field: "templateKey", value: "project-page"}
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} {{year}}-{{month}}-{{day}} {{fields.featured}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "project-page",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured", name: "featured", widget: boolean }
+      # - {label: "Description", name: "description", widget: "text"}
+      # - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
+      - {
+          label: "Featured Image",
+          name: "featuredimage",
+          widget: object,
+          fields:
+            [
+              { label: Image, name: image, widget: image },
+              { label: Alt, name: alt, widget: string },
+            ],
+        }
+      - { label: Location, name: location, widget: string }
+      - { label: "Body", name: "body", widget: "markdown" }
+      # - {label: "Tags", name: "tags", widget: "list"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Image, name: image, widget: image }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          # - { label: "Body", name: "body", widget: "markdown" }
+          # - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
+          # - {label: Description, name: description, widget: string}
+          # - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          # - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
+          - {
+              label: "About",
+              name: "about",
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  {
+                    label: Image,
+                    name: image,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Button,
+                    name: button,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Label, name: label, widget: string },
+                        { label: URL, name: url, widget: string },
+                      ],
+                  },
+                ],
+            }
+      - file: "src/pages/projects/index.md"
+        label: "Projects"
+        name: "projects-index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "projects-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Team,
+              label_singular: Member,
+              name: team,
+              widget: list,
+              fields:
+                [
+                  { label: Name, name: name, widget: string },
+                  { label: Title, name: title, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+      - file: "src/pages/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Subheading, name: subheading, widget: string }
+          - {
+              label: ContactForm,
+              name: contactform,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: Office,
+              name: office,
+              widget: object,
+              fields:
+                [
+                  { label: Tagline, name: tagline, widget: string },
+                  { label: Location, name: location, widget: string },
+                  { label: Address, name: address, widget: markdown },
+                  { label: Phone, name: phone, widget: markdown },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
