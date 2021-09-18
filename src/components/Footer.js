@@ -89,18 +89,24 @@ const Footer = () => {
                 <a
                   href="https://www.gatsbyjs.com/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   Gatsby
                 </a>
                 <a
                   href="https://www.netlifycms.org/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   Netlify CMS
                 </a>
                 <a
                   href="https://tailwindcss.com/"
                   className="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
+                  rel="noreferrer"
+                  target="_blank"
                 >
                   Tailwind CSS
                 </a>

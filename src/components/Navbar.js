@@ -126,7 +126,12 @@ const Navbar = ({ className }) => {
             >
               Contact
             </ExactNavLink>
-            <a href="https://github.com/jimmybutton/gatsby-netlify-cms" target="_blank" className="py-4 md:py-2 md:pl-4">
+            <a
+              href="https://github.com/jimmybutton/gatsby-netlify-cms"
+              className="py-4 md:py-2 md:pl-4"
+              rel="noreferrer"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
