@@ -15,7 +15,7 @@
   Gatsby v3 - Netlify CMS - Tailwind CSS - Starter
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9ec217e7-f3b6-4ef4-b20c-cb0367bb4e1d/deploy-status)](https://app.netlify.com/sites/objective-thompson-fe2703/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b13fc0e1-9fca-48c2-b078-12722c7e0357/deploy-status)](https://app.netlify.com/sites/infallible-varahamihira-058515/deploys)
 
 An example website built using Gatsby v3, Netlify CMS and Tailwind CSS.
 
@@ -43,7 +43,7 @@ Start development environment with
 
 ```
 $ git clone https://github.com/jimmybutton/gatsby-netlifycms-tailwind-starter.git
-$ cd gatsby-netlify-cms
+$ cd gatsby-netlifycms-tailwind-starter
 $ npm install
 $ gatsby develop
 ```

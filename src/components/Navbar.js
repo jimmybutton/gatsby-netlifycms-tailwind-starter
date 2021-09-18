@@ -127,7 +127,7 @@ const Navbar = ({ className }) => {
               Contact
             </ExactNavLink>
             <a
-              href="https://github.com/jimmybutton/gatsby-netlify-cms"
+              href="https://github.com/jimmybutton/gatsby-netlifycms-tailwind-starter"
               className="py-4 md:py-2 md:pl-4"
               rel="noreferrer"
               target="_blank"
