@@ -22,7 +22,9 @@ const Layout = ({ children }) => {
       <div className="flex flex-col h-screen justify-between">
         <Navbar
           className={`transition transform duration-300 ease-in-out ${
-            scrollDirection === "down" || scrollY < 200 ? "" : "-translate-y-full"
+            scrollDirection === "down" || scrollY < 200
+              ? ""
+              : "-translate-y-full"
           }`}
         />
         {/* Navbar height will be h-12 sm:h-14 md:h-18 */}
