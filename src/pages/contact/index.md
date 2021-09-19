@@ -12,11 +12,11 @@ office:
   tagline: Our Office
   location: London Spitalfield
   address: |-
-    UrbanGarden Ltd\
-    143 Whitecross St\
-    London EC1Y 8JJ
+    UrbanGarden\
+    143 Fake St\
+    London
   phone: |-
-    Email: info@urbangarden.com\
+    Email: fake@urbangarden.com\
     Phone: 01234 567 891\
     Monday to Friday 9-6pm GMT.
   image: /img/klaudia-piaskowska-g3lrnieizq4-unsplash.jpg
