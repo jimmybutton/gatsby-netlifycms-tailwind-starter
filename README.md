@@ -81,5 +81,8 @@ I've you find a solution that works, please let me know or submit a pull request
 
 ## 🛠 Todo
 
+- need to fix navbar when navigating between projects
+- change the heading to say that this is a starter template
+- need to change the address to a fake one
 - Google analytics? https://www.gatsbyjs.com/plugins/gatsby-plugin-gtag/?=google%20analytics#gatsby-plugin-gtag
 - gatsby plugin offline?
