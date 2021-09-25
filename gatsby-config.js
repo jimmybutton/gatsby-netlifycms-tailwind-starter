@@ -69,6 +69,18 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `UrbanGarden`,
+        short_name: `UrbanGarden`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#047857`,
+        display: `standalone`,
+        icon: `src/img/urbangarden-icon.png`,
+      },
+    },
     "gatsby-transformer-remark-frontmatter",
     {
       resolve: `gatsby-plugin-netlify-cms`,
@@ -93,18 +105,6 @@ module.exports = {
         host: siteUrl,
         sitemap: `${siteUrl}/sitemap.xml`,
         policy: [{ userAgent: "*", allow: "/" }],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `UrbanGarden`,
-        short_name: `UrbanGarden`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#047857`,
-        display: `standalone`,
-        icon: `src/img/urbangarden-icon.png`,
       },
     },
   ],
