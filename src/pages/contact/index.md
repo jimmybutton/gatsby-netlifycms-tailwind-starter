@@ -13,7 +13,7 @@ office:
   location: London Spitalfield
   address: |-
     UrbanGarden\
-    143 Fake St\
+    143 Fake Street\
     London
   phone: |-
     Email: fake@urbangarden.com\
