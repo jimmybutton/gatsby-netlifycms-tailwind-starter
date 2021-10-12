@@ -21,7 +21,7 @@ An example website built using Gatsby v3, Netlify CMS and Tailwind CSS.
 
 It's a website of a fake urban gardening agency and comprises of a landing page, a project portfolio, about page with team members, and a contact form.
 
-Check out the demo site: https://objective-thompson-fe2703.netlify.app/
+ 👉 Check out the [demo site](https://infallible-varahamihira-058515.netlify.app/)!
 
 <a href="https://app.netlify.com/start/deploy?repository=https://github.com/jimmybutton/gatsby-netlifycms-tailwind-starter" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
 
